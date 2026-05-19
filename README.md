@@ -1,6 +1,8 @@
-# CervantvfrGithubIo
+# cervantvfr.github.io
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
+Personal portfolio site built with Angular 19.
+
+Live site: https://cervantvfr.github.io
 
 ## Development server
 
@@ -12,7 +14,28 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build` to build the project. Production output is in `dist/cervantvfr.github.io/browser/`.
+
+## Deploy to GitHub Pages
+
+Deployment is automated with GitHub Actions (`.github/workflows/deploy.yml`).
+
+### One-time GitHub setup
+
+1. Open the repo on GitHub: **Settings → Pages**
+2. Under **Build and deployment**, set **Source** to **GitHub Actions** (not “Deploy from a branch”)
+
+### Publish
+Push to the `master` branch. Each push runs the workflow: install → build → deploy.
+You can also run it manually: **Actions → Deploy to GitHub Pages → Run workflow**.
+The site will be available at https://cervantvfr.github.io (may take 1–2 minutes after the workflow finishes).
+
+### Local production preview
+
+```bash
+npm run build
+npx serve dist/cervantvfr.github.io/browser
+```
 
 ## Running unit tests
 
