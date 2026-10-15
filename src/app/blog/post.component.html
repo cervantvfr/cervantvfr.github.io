@@ -1,0 +1,13 @@
+<article class="reading">
+    <p *ngIf="missing" class="missing-post">
+        This post could not be found.
+        <a routerLink="/blog">Back to the blog</a>
+    </p>
+
+    <ng-container *ngIf="post">
+        <h1 class="post-title">{{ post.title }}</h1>
+        <p class="post-subtitle" *ngIf="post.subtitle">{{ post.subtitle }}</p>
+        <p class="post-byline">Victor Cervantes · {{ formatDate(post.date) }} · {{ post.minutes }} min read</p>
+        <div class="post-body" [innerHTML]="post.html"></div>
+    </ng-container>
+</article>

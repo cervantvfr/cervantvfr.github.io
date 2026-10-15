@@ -1,4 +1,209 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    color: #242424;
+    background: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
 .container {
     max-width: 1140px;
+}
+
+.reading {
+    max-width: 680px;
+    margin: 2.5rem auto 4rem;
+    padding: 0 1.25rem;
+}
+
+.reading h2,
+.reading h3,
+.reading p,
+.reading li,
+.section-title,
+.post-title,
+.post-subtitle,
+.post-body {
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
+
+.reading h2,
+.section-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.75rem;
+}
+
+.section-title {
+    margin-top: 0;
+}
+
+.reading h3 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.4rem;
+}
+
+.reading p,
+.reading li {
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.about-avatar {
+    display: block;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+.blog-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.blog-list a {
+    display: block;
+    padding: 1.35rem 0;
+    border-bottom: 1px solid #e6e6e6;
+    color: inherit;
+    text-decoration: none;
+}
+
+.blog-list h2 {
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+    margin: 0 0 0.35rem;
+}
+
+.blog-subtitle {
+    color: #6b6b6b;
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin: 0 0 0.55rem;
+}
+
+.blog-meta,
+.role-dates,
+.role-org,
+.post-byline,
+.missing-post {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.blog-meta {
+    color: #6b6b6b;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.post-title {
+    font-size: clamp(2rem, 5vw, 2.6rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    margin: 0 0 0.6rem;
+}
+
+.post-subtitle {
+    color: #6b6b6b;
+    font-size: 1.35rem;
+    line-height: 1.4;
+    margin: 0 0 1rem;
+}
+
+.post-byline {
+    font-size: 0.95rem;
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.6rem;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.post-body {
+    font-size: 1.25rem;
+    line-height: 1.7;
+}
+
+.post-body p {
+    margin: 0 0 1.45rem;
+}
+
+.post-body h2 {
+    font-size: 1.6rem;
+    margin: 2.2rem 0 0.7rem;
+}
+
+.post-body ul,
+.post-body ol {
+    margin: 0 0 1.45rem;
+    padding-left: 1.4rem;
+}
+
+.post-body li {
+    margin: 0.35rem 0;
+}
+
+.post-body a {
+    color: inherit;
+}
+
+.post-body code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.85em;
+}
+
+.post-body pre {
+    background: #f7f7f7;
+    padding: 1rem 1.1rem;
+    overflow: auto;
+    border-radius: 4px;
+    margin: 0 0 1.45rem;
+}
+
+.post-body pre code {
+    font-size: 0.9rem;
+    line-height: 1.45;
+}
+
+.missing-post a {
+    display: inline-block;
+    margin-left: 0.35rem;
+}
+
+.role {
+    margin-bottom: 2rem;
+}
+
+.role-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.5rem 1rem;
+    flex-wrap: wrap;
+}
+
+.role h3 {
+    margin: 0;
+}
+
+.role-dates,
+.role-org {
+    color: #6b6b6b;
+}
+
+.role-org {
+    margin: 0.2rem 0 0.45rem;
+    font-size: 1rem;
+}
+
+.role ul {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.role li {
+    font-size: 1.05rem;
+    margin: 0.25rem 0;
 }

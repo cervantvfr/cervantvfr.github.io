@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
+import { BlogComponent } from './blog/blog.component';
+import { PostComponent } from './blog/post.component';
 import { CvComponent } from './cv/cv.component';
-import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'portfolio', component: PortfolioComponent },
+  { path: 'blog', component: BlogComponent },
+  { path: 'blog/:slug', component: PostComponent },
   { path: 'cv', component: CvComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: '**', component: HomeComponent, pathMatch: 'full' }
+  { path: '**', component: HomeComponent }
 ];
 
 @NgModule({

@@ -1,1 +1,14 @@
-<p>cv works!</p>
+<article class="reading">
+    <h2>Experience</h2>
+
+    <section class="role" *ngFor="let role of experience">
+        <div class="role-head">
+            <h3>{{ role.title }}</h3>
+            <span class="role-dates">{{ role.dates }}</span>
+        </div>
+        <p class="role-org">{{ role.organization }} · {{ role.location }}</p>
+        <ul>
+            <li *ngFor="let item of role.bullets">{{ item }}</li>
+        </ul>
+    </section>
+</article>

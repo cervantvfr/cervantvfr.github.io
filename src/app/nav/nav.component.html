@@ -2,19 +2,15 @@
     <div class="container">
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link text-secondary" routerLink="/home" routerLinkActive="text-dark">Home</a>
+                <a class="nav-link text-secondary" routerLink="/home" routerLinkActive="text-dark" [routerLinkActiveOptions]="{exact: true}">Home</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link text-secondary" routerLink="/portfolio" routerLinkActive="text-dark">Portfolio</a>
+                <a class="nav-link text-secondary" routerLink="/blog" routerLinkActive="text-dark" [routerLinkActiveOptions]="{exact: false}">Blog</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link text-secondary" routerLink="/cv" routerLinkActive="text-dark">CV</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link text-secondary" routerLink="/contact" routerLinkActive="text-dark">Contact</a>
+                <a class="nav-link text-secondary" routerLink="/cv" routerLinkActive="text-dark" [routerLinkActiveOptions]="{exact: true}">CV</a>
             </li>
         </ul>
     </div>
