@@ -1,6 +1,6 @@
 # cervantvfr.github.io
 
-Personal portfolio site built with Angular 19.
+Personal portfolio site built with Angular 19 using Cursor.
 
 Live site: https://cervantvfr.github.io
 
